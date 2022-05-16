@@ -16,7 +16,7 @@ import Demo from '../demo.js';
 const MatchesScreen = () => {
   return (
   
-
+      <View> backgroundColorPURPLE>
       <FlatList
         numColumns={2}
         data={Demo}

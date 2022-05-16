@@ -3,6 +3,8 @@ import { StyleSheet, Dimensions } from "react-native";
 const PRIMARY_COLOR = "#7444C0";
 const SECONDARY_COLOR = "#5636B8";
 const WHITE = "#FFFFFF";
+const PURPLE = "#9FA8DA";
+const PINK = "A083B6";
 const GRAY = "#757E90";
 const DARK_GRAY = "#363636";
 const BLACK = "#000000";

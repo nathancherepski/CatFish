@@ -14,7 +14,7 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Login" component={ProfilePage} />
        <Stack.Screen name="Matches" component={MatchesScreen} />
         <Stack.Screen name="Potentials" component={PotentialsScreen} />
       </Stack.Navigator>

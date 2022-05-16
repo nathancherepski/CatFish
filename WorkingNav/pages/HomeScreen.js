@@ -1,18 +1,34 @@
 import React from 'react';
-import { Button, View, Text, TextInput } from 'react-native';
+import { View, ImageBackground } from 'react-native';
+import CardStack, { Card } from 'react-native-card-stack-swiper';
+import CardItem from '../components/cards';
+import styles from '../components/styles';
+import Demo from '../demo.js';
 
-class HomeScreen extends React.Component {
-    render() {
-      return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <Text>Catfish</Text>
-          <Button
-            title="Login"
-            onPress={() => this.props.navigation.navigate('Login')}
-          />
-        </View>
-      );
-    }
-}
+const Home = () => {
+  return (
 
-export default HomeScreen;
+        <CardStack
+          loop={true}
+          verticalSwipe={false}
+          renderNoMoreCards={() => null}
+          ref={swiper => (this.swiper = swiper)}
+        >
+          {Demo,map((item, index) => (
+            <Card key={index}>
+              <CardItem
+                image={item.image}
+                name={item.name}
+                description={item.description}
+                matches={item.match}
+                actions
+                onPressLeft={() => this.swiper.swipeLeft()}
+                onPressRight={() => this.swiper.swipeRight()}
+              />
+            </Card>
+          ))}
+        </CardStack>
+  );
+};
+
+export default Home;
