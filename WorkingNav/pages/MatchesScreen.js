@@ -1,18 +1,39 @@
 import React from 'react';
-import { Button, View, Text, TextInput } from 'react-native';
+import styles from '../components/styles';
 
-class MatchesScreen extends React.Component {
-    render() {
-      return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <Text>Matches Screen </Text>
-          <Button
-            title="Go to Potentials"
-            onPress={() => this.props.navigation.navigate('Potentials')}
-          />
-        </View>
-      );
-    }
-}
+import {
+  ScrollView,
+  View,
+  Text,
+  TouchableOpacity,
+  ImageBackground,
+  FlatList
+} from 'react-native';
+import CardItem from '../components/cards';
+import Icon from '../components/icons';
+import Demo from '../demo.js';
+
+const MatchesScreen = () => {
+  return (
+  
+
+      <FlatList
+        numColumns={2}
+        data={Demo}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={({ item }) => (
+          <TouchableOpacity>
+            <CardItem
+              image={item.image}
+              name={item.name}
+              status={item.status}
+              variant
+            />
+          </TouchableOpacity>
+        )}
+      />
+    
+  );
+};
 
 export default MatchesScreen;
