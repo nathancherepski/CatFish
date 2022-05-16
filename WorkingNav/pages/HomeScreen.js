@@ -9,15 +9,17 @@ class HomeScreen extends React.Component {
         
         <View style={backgroundStyles.container}>
           <Text style={titleStyles.title}>Catfish</Text>
-          <CoolButton styles={buttonStyles.container}
-            title="Login"
-            onPress={() => this.props.navigation.navigate('Login')}
-          />
-          <ImageLoader
-            source={require("../assets/catfishlogo.png")}
-            resizeMode="contain"
-            style={backgroundStyles.image1}
-          />
+          <View style={anotherBackground.container}>
+            <CoolButton styles={buttonStyles.container}
+              title="Login"
+              onPress={() => this.props.navigation.navigate('Login')}
+            />
+            <ImageLoader
+              source={require("../assets/catfishlogo.png")}
+              resizeMode="contain"
+              style={backgroundStyles.image1}
+            />
+          </View>
         </View>
       );
     }
@@ -56,6 +58,20 @@ const backgroundStyles = StyleSheet.create(
     }
 );
 
+const anotherBackground = StyleSheet.create(
+  {
+    container: { 
+      flex: 4, 
+      alignItems: 'center', 
+      justifyContent: 'space-evenly', 
+      backgroundColor: '#A083B6',
+      borderWidth: 3,
+      borderColor: "thistle",
+    },
+
+ }
+);
+
 const titleStyles = StyleSheet.create(
     {
       title: { 
@@ -66,10 +82,9 @@ const titleStyles = StyleSheet.create(
         fontSize: 96, 
         fontStyle: 'italic', 
         fontWeight: 'bold', 
-        backgroundColor: '#9FA6A4',
-        borderWidth: 1,
+        backgroundColor: '#A083B6',
+        borderWidth: 3,
         borderColor: "thistle",
-        borderRadius: 50,
     }
   }
 
