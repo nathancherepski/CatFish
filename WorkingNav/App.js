@@ -5,14 +5,12 @@ import HomeScreen from './pages/HomeScreen';
 import LoginScreen from './pages/LoginScreen';
 import MatchesScreen from './pages/MatchesScreen';
 import PotentialsScreen from './pages/PotentialsScreen';
-import Navbar from './components/Navbar';
 
 
 const Stack = createNativeStackNavigator();
 
 function App() {
   return (
-    <>
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
@@ -21,12 +19,6 @@ function App() {
         <Stack.Screen name="Potentials" component={PotentialsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
-    <Navbar/>
-    </>
-    
-   
-    
-    
   );
 }
 
