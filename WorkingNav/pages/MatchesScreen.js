@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../components/styles';
 
 import {
+  StyleSheet,
   ScrollView,
   View,
   Text,
@@ -16,7 +17,7 @@ import Demo from '../demo.js';
 const MatchesScreen = () => {
   return (
   
-
+      <View style={backgroundStyles.container}>
       <FlatList
         numColumns={2}
         data={Demo}
@@ -32,8 +33,23 @@ const MatchesScreen = () => {
           </TouchableOpacity>
         )}
       />
-    
+    </View>
   );
 };
 
 export default MatchesScreen;
+
+const backgroundStyles = StyleSheet.create(
+  {
+     container: { flex: 1, alignItems: 'center', justifyContent: 'space-evenly', backgroundColor: '#9FA8DA'
+     },
+     image1: {
+       flex: 4,
+       width: 230,
+       height: 250,
+       marginTop: -50,
+       marginLeft: 0
+     },
+
+ }
+);
