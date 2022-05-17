@@ -30,6 +30,7 @@ module.exports = [
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
 		status: 'Offline',
 		message: "Someone like you. Someone who'll rattle the cages.",
+		image: require('./assets/cat1.jpg'),
 		messages: [
 			{
 				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
@@ -53,7 +54,7 @@ module.exports = [
 		status: 'Offline',
 		message:
 			'Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.',
-			
+			image: require('./assets/dog2.jpg'),
 		messages: [
 			{
 				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
@@ -76,6 +77,7 @@ module.exports = [
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
 		status: 'Online',
 		message: "Bats frighten me. It's time my enemies shared my dread.",
+		image: require('./assets/fish1.jpg'),
 		messages: [
 			{
 				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
@@ -98,6 +100,7 @@ module.exports = [
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
 		status: 'Offline',
 		message: "It's not who I am underneath but what I do that defines me.",
+		image: require('./assets/fish7.jpg'),
 		messages: [
 			{
 				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
@@ -120,7 +123,7 @@ module.exports = [
 		status: 'Online',
 		message:
 			'You have nothing, nothing to threaten me with. Nothing to do with all your strength.',
-	
+			image: require('./assets/dog3.jpg'),
 		messages: [
 			{
 				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
@@ -143,7 +146,7 @@ module.exports = [
 		status: 'Online',
 		message:
 			"Never start with the head. The victim gets all fuzzy. He can't feel the next... See?",
-	
+			image: require('./assets/dog6.jpg'),
 		messages: [
 			{
 				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
@@ -172,7 +175,7 @@ module.exports = [
 		status: 'Online',
 		message:
 			"And as for the television's so-called plan, Batman has no jurisdiction.",
-	
+			image: require('./assets/cat4.jpg'),
 		messages: [
 			{
 				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
@@ -195,7 +198,8 @@ module.exports = [
 		status: 'Online',
 		message:
 			'This is what happens when an unstoppable force meets an immovable object.',
-		messages: [
+			image: require('./assets/fish10.jpg'),
+			messages: [
 			{
 				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
 			},
@@ -217,7 +221,8 @@ module.exports = [
 		status: 'Offline',
 		message:
 			'You want order in Gotham. Batman must take off his mask and turn himself in.',
-		messages: [
+			image: require('./assets/dog5.jpg'),
+			messages: [
 			{
 				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
 			},
@@ -229,5 +234,75 @@ module.exports = [
 			}
 		],
 		messageCount: 3
-	}
+	},
+
+{
+	id: 11,
+	name: 'Alejandro Vargas',
+	match: '98',
+	description:
+		'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
+	status: 'Offline',
+	message:
+		'You want order in Gotham. Batman must take off his mask and turn himself in.',
+		image: require('./assets/fish5.jpg'),
+		messages: [
+		{
+			text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+		},
+		{
+			text: "What day?",
+		},
+		{
+			text: "Wednesday?",
+		}
+	],
+	messageCount: 3
+},
+{
+	id: 12,
+	name: 'Nathan Cherepski',
+	match: '98',
+	description:
+		'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
+	status: 'Offline',
+	message:
+		'You want order in Gotham. Batman must take off his mask and turn himself in.',
+		image: require('./assets/cat5.jpg'),
+		messages: [
+		{
+			text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+		},
+		{
+			text: "What day?",
+		},
+		{
+			text: "Wednesday?",
+		}
+	],
+	messageCount: 3
+},
+{
+	id: 13,
+	name: 'Omarr Roberts',
+	match: '98',
+	description:
+		'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
+	status: 'Offline',
+	message:
+		'You want order in Gotham. Batman must take off his mask and turn himself in.',
+		image: require('./assets/dog7.jpg'),
+		messages: [
+		{
+			text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+		},
+		{
+			text: "What day?",
+		},
+		{
+			text: "Wednesday?",
+		}
+	],
+	messageCount: 3
+}
 ];
