@@ -1,72 +1,128 @@
-import React from 'react';
-import { Button, View, Text, TextInput } from 'react-native';
-
-function checkCredentials(username, password){
-    /*
-    try {
-      const results = db.checkCreds(username, password);
-      
-      if(results != err && results != null)
-      {
-        return true;
-      }
-    }catch(err)
-    {
-      return false;
-    }
-    */
-    return true;
-  
-     // database code here
-     
-  }
-
+import { StatusBar } from "expo-status-bar";
+import React, { useState } from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TextInput,
+  Button,
+  TouchableOpacity,
+} from "react-native";
+ 
 class LoginScreen extends React.Component {
+
     constructor (props) {
-      super(props);
-      this.state={
-          email:'',
-          password:''
+        super(props);
+        this.state={
+            username:'',
+            password:''
+        }
+        this.trylogin = this.trylogin.bind(this); // you need this to be able to access state from login
       }
-      this.trylogin = this.trylogin.bind(this); // you need this to be able to access state from login
-    }
-  
-    trylogin() {
-      if(checkCredentials(this.state.username, this.state.password)){
-        console.log('your username is', this.state.username);
-        console.log('your password is', this.state.password);
-        return true;
-      }
-      else
-      {
-        console.log('invalid login');
-        return false;
-      }
-      
-    }
     
-  
-    render() {
-      return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <Text>Enter your username and pasword below.</Text>
-          <TextInput style={{height: 40}} placeholder="username" defaultValue={''} id="username" onChangeText={ (username) => {
-      this.setState({username})}}></TextInput>
-          <TextInput secureTextEntry={true} style={{height: 40}} placeholder="password" defaultValue={''} id="password" onChangeText={(password) => {
-      this.setState({password})}}></TextInput>
-          <Button
-            title="Login"
-            onPress={() => {
-              if(this.trylogin() == true){
-                this.props.navigation.push('Matches')
-                
-              }
-            }
-          }
-          />
+      trylogin() {
+        if(checkCredentials(this.state.username, this.state.password)){
+          console.log('your username is', this.state.username);
+          console.log('your password is', this.state.password);
+          return true;
+        }
+        else
+        {
+          console.log('invalid login');
+          return false;
+        }
+        
+      }
+  render() {
+    return (
+        <View style={styles.container}>
+        <Image style={styles.image1} source={require("../assets/catfishlogo.png")} />
+    
+        <StatusBar style="auto" />
+        <View style={styles.inputView}>
+            <TextInput
+            id = "username"
+            style={styles.TextInput}
+            placeholder="Username"
+            placeholderTextColor="#003f5c"
+            onChangeText={ (username) => {
+                this.setState({username})
+            }}
+            />
         </View>
-      );
+    
+        <View style={styles.inputView}>
+            <TextInput
+            id = "password"
+            style={styles.TextInput}
+            placeholder="Password"
+            placeholderTextColor="#003f5c"
+            secureTextEntry={true}
+            onChangeText={ (password) => {
+                this.setState({password})
+            }}
+            />
+        </View>
+    
+        <TouchableOpacity>
+            <Text style={styles.forgot_button}>Forgot Password?</Text>
+        </TouchableOpacity>
+    
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('Matches')} style={styles.loginBtn}>
+            <Text style={styles.loginText}>LOGIN</Text>
+        </TouchableOpacity>
+        </View>
+    );
     }
-  }
+}
+ 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#9FA8DA",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  image1: {
+    flex: 4,
+    width: 250,
+    height: 275,
+    marginTop: 0,
+    marginLeft: 0
+},
+  inputView: {
+    backgroundColor: "#A083B6",
+    borderRadius: 30,
+    width: "70%",
+    height: 45,
+    marginBottom: 20,
+ 
+    alignItems: "center",
+  },
+ 
+  TextInput: {
+    height: 50,
+    flex: 1,
+    padding: 10,
+    marginLeft: 20,
+    alignItems: "center",
+  },
+ 
+  forgot_button: {
+    height: 30,
+    marginBottom: 30,
+  },
+ 
+  loginBtn: {
+    width: "80%",
+    borderRadius: 25,
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 40,
+    backgroundColor: "#A083B6",
+  },
+});
 
 export default LoginScreen;
