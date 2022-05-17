@@ -53,6 +53,9 @@ react-navigation-tabs@2.11.2
 
 react@17.0.2
 
+## User Stories (Requirements)
+
+https://docs.google.com/document/d/1Rhv5FkMXNhbWNnFbRQeZE7Kp3H7fWz5fhUEk5_h7IFQ/edit?usp=sharing 
 
 ### Support or Contact
 
