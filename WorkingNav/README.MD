@@ -15,7 +15,7 @@ How to Use It:
 
 3.If the User is not registered, they may click on the Sign-Up link visible just above the Login button. 
 
-4.After successful login, the user sees the list of people nearby them in a tile format with an excellent animal picture along with the name of the people and active status (online/offline) right a moment, and the user may choose the people they like by scrolling the list up and down.
+4.After successful login, the user sees the list of people nearby them in a tile format with an excellent animal picture along with the name of the people and active status (online/offline) right at the moment, and the user may choose the people they like by scrolling the list up and down.
 
 5.When the user clicks on the desired tile, they may view the details of the desired people, such as hobbies, job information, customize messages from the person, and their status, whether they are online or offline, right at the moment.
 
