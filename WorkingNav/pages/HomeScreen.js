@@ -45,7 +45,11 @@ const buttonStyles = StyleSheet.create({
 
 const backgroundStyles = StyleSheet.create(
      {
-        container: { flex: 1, alignItems: 'center', justifyContent: 'space-evenly', backgroundColor: '#9FA8DA'
+        container: { 
+          flex: 1, 
+          alignItems: 'center', 
+          justifyContent: 'space-evenly', 
+          backgroundColor: '#9FA8DA'
         },
         image1: {
           flex: 4,
