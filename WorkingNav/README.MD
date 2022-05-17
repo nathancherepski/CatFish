@@ -17,6 +17,6 @@ How to Use It:
 
 4.After successful login, the user sees the list of people nearby them in a tile format with an excellent animal picture and the name of the people, and the user may choose the people they like by scrolling the list up and down.
 
-5.When the user clicks on the desired tile, they may view the details of the desired people, such as hobbies, job information, customize messages from the person, and their status, whether they are online or offline right a movement.
+5.When the user clicks on the desired tile, they may view the details of the desired people, such as hobbies, job information, customize messages from the person, and their status, whether they are online or offline, right at the moment.
 
-6.If the user found the desired match then there is a button named MATCH click on that to save the desire match.
+6.If the user found the desired match then there is a button named MATCH,you can click on that to save the desired match.
