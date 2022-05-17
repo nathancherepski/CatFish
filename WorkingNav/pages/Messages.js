@@ -139,7 +139,7 @@ const backgroundStyles = StyleSheet.create(
 
         inputView: {
         
-            backgroundColor: "#4BCBDF",
+            backgroundColor: "#9FA8DA",
             borderRadius: 30,
             width: "50%",
             height: 45,
@@ -166,7 +166,7 @@ const anotherBackground = StyleSheet.create(
       flex: 4, 
       alignItems: 'center', 
       justifyContent: 'space-evenly', 
-      backgroundColor: '#A083B6',
+      backgroundColor: '#9FA8DA',
       borderWidth: 3,
       borderColor: "thistle",
     },
