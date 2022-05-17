@@ -9,6 +9,37 @@ import {
   Button,
   TouchableOpacity,
 } from "react-native";
+
+
+
+let users = [
+    "natecherepski",
+    "omar",
+    "benny"
+    
+]
+
+let passwords = [
+    "four",
+    "told",
+    "me",
+]
+
+function checkCredentials(username, password)
+{
+  check = false;
+
+  for(var count in users)
+  {
+      console.log(users[count]);
+    if(users[count] == username && passwords[count] == password)
+    {
+      check = true;
+    }
+  }
+
+  return check;
+}
  
 class LoginScreen extends React.Component {
 
@@ -20,6 +51,8 @@ class LoginScreen extends React.Component {
         }
         this.trylogin = this.trylogin.bind(this); // you need this to be able to access state from login
       }
+
+      
     
       trylogin() {
         if(checkCredentials(this.state.username, this.state.password)){
@@ -69,7 +102,16 @@ class LoginScreen extends React.Component {
             <Text style={styles.forgot_button}>Forgot Password?</Text>
         </TouchableOpacity>
     
-        <TouchableOpacity onPress={() => this.props.navigation.navigate('Matches')} style={styles.loginBtn}>
+        <TouchableOpacity onPress={() => {
+          if(this.trylogin() == true) {
+            this.props.navigation.navigate('Matches');
+          }
+          else
+          {
+            // send alert
+            console.log("invalid password");
+          }
+        }} style={styles.loginBtn}>
             <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
         </View>
