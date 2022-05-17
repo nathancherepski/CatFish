@@ -104,9 +104,9 @@ const styles = StyleSheet.create({
   },
   image1: {
     flex: 4,
-    width: 250,
-    height: 275,
-    marginTop: 150,
+    width: 350,
+    height: 380,
+    marginTop: 20,
     marginLeft: 0,
     resizeMode:"contain"
 },
@@ -135,14 +135,14 @@ const styles = StyleSheet.create({
   },
  
   loginBtn: {
-    flex: "-30",
+    flex: 2,
     width: "80%",
     borderRadius: 25,
     height: 50,
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 250,
-    backgroundColor: "#A083B6",
+    marginTop: 80,
+    backgroundColor: "#A083B6"
   },
 });
 
@@ -156,8 +156,8 @@ const extra = StyleSheet.create({
     },
     image1: {
       flex: 4,
-      width: 250,
-      height: 275,
+      width: 350,
+      height: 380,
       marginTop: 150,
       marginLeft: 0,
       resizeMode:"contain"
@@ -187,13 +187,13 @@ const extra = StyleSheet.create({
     },
    
     loginBtn: {
-      flex: "-30",
+      flex: 3,
       width: "80%",
       borderRadius: 25,
       height: 50,
       alignItems: "center",
       justifyContent: "center",
-      marginTop: 250,
+      marginTop: 10,
       backgroundColor: "#A083B6",
     },
   });

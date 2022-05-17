@@ -40,7 +40,7 @@ function checkCredentials(username, password)
   return check;
 }
  
-class LoginScreen extends React.Component {
+class NewLoginScreen extends React.Component {
 
     constructor (props) {
         super(props);
@@ -101,7 +101,8 @@ class LoginScreen extends React.Component {
         <TouchableOpacity onPress={() => this.props.navigation.navigate('SignUpScreen')}>
             <Text style={styles.forgot_button}>Sign Up?</Text>
         </TouchableOpacity>
-    
+
+
         <TouchableOpacity onPress={() => {
           if(this.trylogin() == true) {
             this.props.navigation.navigate('Matches');
@@ -130,9 +131,8 @@ const styles = StyleSheet.create({
     flex: 4,
     width: 250,
     height: 275,
-    marginTop: 150,
-    marginLeft: 0,
-    resizeMode:"contain"
+    marginTop: 0,
+    marginLeft: 0
 },
   inputView: {
     backgroundColor: "#A083B6",
@@ -159,15 +159,14 @@ const styles = StyleSheet.create({
   },
  
   loginBtn: {
-    flex: "-30",
     width: "80%",
     borderRadius: 25,
     height: 50,
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 250,
+    marginTop: 40,
     backgroundColor: "#A083B6",
   },
 });
 
-export default LoginScreen;
+export default NewLoginScreen;
