@@ -47,9 +47,10 @@ export default StyleSheet.create({
 		color: WHITE
 	},
 	descriptionCardItem: {
-		color: GRAY,
+		color: PURPLE,
 		textAlign: "center",
-		fontSize: 20
+		fontWeight: 'bold',
+		fontSize: 25
 	},
 	status: {
 		paddingBottom: 10,
@@ -178,7 +179,8 @@ export default StyleSheet.create({
 		color: GRAY,
 		fontSize: 18,
 		paddingTop: 5,
-		paddingBottom:20
+		paddingBottom:20,
+		fontWeight: 'bold'
 	},
 
 	// COMPONENT - PROFILE ITEM
