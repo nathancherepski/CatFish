@@ -99,7 +99,7 @@ class LoginScreen extends React.Component {
         </View>
     
         <TouchableOpacity>
-            <Text style={styles.forgot_button}>Forgot Password?</Text>
+            <Text style={styles.forgot_button}>Sign Up?</Text>
         </TouchableOpacity>
     
         <TouchableOpacity onPress={() => {
@@ -145,10 +145,11 @@ const styles = StyleSheet.create({
   },
  
   TextInput: {
-    height: 50,
+    width: 225,
+    height: "70%",
     flex: 1,
     padding: 10,
-    marginLeft: 20,
+    marginLeft: 0,
     alignItems: "center",
   },
  

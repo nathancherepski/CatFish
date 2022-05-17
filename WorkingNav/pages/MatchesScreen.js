@@ -19,7 +19,7 @@ class MatchesScreen extends React.Component{
   render () {
   return (
     <View style={anotherBackground.container}>
-      <PotentialsButton title= "Explore People Near You" onPress={() => this.props.navigation.navigate('Potentials')}/>
+      <PotentialsButton title= "Explore People Near You"/>
       <View style={backgroundStyles.container}>
       <FlatList
         numColumns={2}
@@ -32,7 +32,8 @@ class MatchesScreen extends React.Component{
             status: item.status,
             description: item.description,
             messages: item.messages,
-            messageCount: item.messageCount
+            messageCount: item.messageCount,
+            areMatched: item.areMatched
           })}>
             <CardItem
               image={item.image}

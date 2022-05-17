@@ -22,7 +22,8 @@ module.exports = [
 				text: "Wednesday?",
 			}
 		],
-		messageCount: 3
+		messageCount: 3,
+		areMatched: "false"
 	},
 	{
 		id: 2,
@@ -44,7 +45,8 @@ module.exports = [
 				text: "Wednesday?",
 			}
 		],
-		messageCount: 3
+		messageCount: 3,
+		areMatched: "true"
 		
 	},
 	{
@@ -68,7 +70,8 @@ module.exports = [
 				text: "Wednesday?",
 			}
 		],
-		messageCount: 3
+		messageCount: 3,
+		areMatched: "false"
 		
 	},
 	{
@@ -91,7 +94,8 @@ module.exports = [
 				text: "Wednesday?",
 			}
 		],
-		messageCount: 3
+		messageCount: 3,
+		areMatched: "true"
 	
 	},
 	{
@@ -114,7 +118,8 @@ module.exports = [
 				text: "Wednesday?",
 			}
 		],
-		messageCount: 3
+		messageCount: 3,
+		areMatched: "false"
 	},
 	{
 		id: 6,
@@ -137,7 +142,8 @@ module.exports = [
 				text: "Wednesday?",
 			}
 		],
-		messageCount: 3
+		messageCount: 3,
+		areMatched: "false"
 	},
 	{
 		id: 7,
@@ -160,7 +166,8 @@ module.exports = [
 				text: "Wednesday?",
 			}
 		],
-		messageCount: 3
+		messageCount: 3,
+		areMatched: "false"
 	},
 	{
 		id: 8,
@@ -189,7 +196,8 @@ module.exports = [
 				text: "Wednesday?",
 			}
 		],
-		messageCount: 3
+		messageCount: 3,
+		areMatched: "false"
 	},
 	{
 		id: 9,
@@ -212,7 +220,8 @@ module.exports = [
 				text: "Wednesday?",
 			}
 		],
-		messageCount: 3
+		messageCount: 3,
+		areMatched: "false"
 	},
 	{
 		id: 10,
@@ -235,7 +244,8 @@ module.exports = [
 				text: "Wednesday?",
 			}
 		],
-		messageCount: 3
+		messageCount: 3,
+		areMatched: "false"
 	},
 
 {
@@ -259,7 +269,8 @@ module.exports = [
 			text: "Wednesday?",
 		}
 	],
-	messageCount: 3
+	messageCount: 3,
+	areMatched: "false"
 },
 {
 	id: 12,
@@ -282,7 +293,8 @@ module.exports = [
 			text: "Wednesday?",
 		}
 	],
-	messageCount: 3
+	messageCount: 3,
+	areMatched: "false"
 },
 {
 	id: 13,
@@ -305,6 +317,7 @@ module.exports = [
 			text: "Wednesday?",
 		}
 	],
-	messageCount: 3
+	messageCount: 3,
+	areMatched: "false"
 }
 ];
