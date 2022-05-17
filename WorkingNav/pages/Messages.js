@@ -42,7 +42,15 @@ function Messages({ route, navigation }) {
         {
             webpage.push(
                     <View>
-                    <Button style={buttonStyles.container} title={"Match"} onPress={({areMatched}) => areMatched = "true"}/>
+                    <Button style={buttonStyles.container} title={"Match"} onPress={() => navigation.navigate('Messages', {
+                      image: image,
+                      name: name,
+                      status: status,
+                      description: description,
+                      messages: messages,
+                      messageCount: messageCount,
+                      areMatched: "true"
+                    })}></Button>
                     </View>
             )
         }
