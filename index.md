@@ -1,37 +1,59 @@
-## Welcome to GitHub Pages
+## CatFish App
 
-You can use the [editor on GitHub](https://github.com/nathancherepski/CatFish/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+A blind dating application using ReactNative, Expo, Javascript
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Objective:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The goal is to build a mobile dating application that enables users to create profiles, upload/view photos, and send messages to matched profiles.
 
-```markdown
-Syntax highlighted code block
+## Installing and Using Software:
 
-# Header 1
-## Header 2
-### Header 3
+# 1.
+As the User opens the App, it will show the splash screen for a few seconds then the following screen will be visible with a large black color Login button.
 
-- Bulleted
-- List
+# 2.
+Click on the Login Button; a Login screen will be visible where the user needs to enter the correct login details, such as Username and Password, and click the Login button at the bottom of the screen.
 
-1. Numbered
-2. List
+# 3.
+If the User is not registered, they may click on the Sign-Up link visible just above the Login button. 
 
-**Bold** and _Italic_ and `Code` text
+# 4.
+After successful login, the user sees the list of people nearby them in a tile format with an excellent animal picture along with the name of the people and active status (online/offline) at a moment, and the user may choose the people they like by scrolling the list up and down.
 
-[Link](url) and ![Image](src)
-```
+# 5.
+When the user clicks on the desired tile, they may view the details of the desired people, such as hobbies, job information, customize messages from the person, and their status, whether they are online or offline, right at the moment.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+# 6.
+If the user found the desired match then there is a button named MATCH,you can click on that to save the desired match.
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nathancherepski/CatFish/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Dependencies
+
+@babel/core@7.17.12
+
+@react-navigation/bottom-tabs@6.3.1
+
+@react-navigation/native-stack@6.6.2
+
+@react-navigation/native@6.0.10
+
+expo-status-bar@1.3.0
+
+expo@45.0.4
+
+react-dom@17.0.2
+
+react-native-web@0.17.7
+
+react-native@0.68.2
+
+react-navigation-tabs@2.11.2
+
+react@17.0.2
+
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+email: natecherepski@gmail.com
