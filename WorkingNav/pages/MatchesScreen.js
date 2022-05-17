@@ -26,7 +26,14 @@ class MatchesScreen extends React.Component{
         data={Demo}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item }) => (
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => this.props.navigation.navigate('Messages', {
+            image: item.image,
+            name: item.name,
+            status: item.status,
+            description: item.description,
+            messages: item.messages,
+            messageCount: item.messageCount
+          })}>
             <CardItem
               image={item.image}
               name={item.name}
