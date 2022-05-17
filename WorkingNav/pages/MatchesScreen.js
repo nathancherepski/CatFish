@@ -19,7 +19,7 @@ class MatchesScreen extends React.Component{
   render () {
   return (
     <View style={anotherBackground.container}>
-      <PotentialsButton title= "Explore People Near You" onPress={() => this.props.navigation.navigate('Potentials')}/>
+      <PotentialsButton title= "Explore People Near You" onPress={() => {}}/>
       <View style={backgroundStyles.container}>
       <FlatList
         numColumns={2}
