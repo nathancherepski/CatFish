@@ -30,23 +30,7 @@ module.exports = [
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
 		status: 'Offline',
 		message: "Someone like you. Someone who'll rattle the cages.",
-<<<<<<< Updated upstream
-		messages: [
-			{
-				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
-			},
-			{
-				text: "What day?",
-			},
-			{
-				text: "Wednesday?",
-			}
-		],
-		messageCount: 3
-		
-=======
 		image: require('../WorkingNav/assets/Dog.webp')
->>>>>>> Stashed changes
 	},
 	{
 		id: 3,
@@ -57,24 +41,7 @@ module.exports = [
 		status: 'Offline',
 		message:
 			'Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.',
-<<<<<<< Updated upstream
-			
-		messages: [
-			{
-				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
-			},
-			{
-				text: "What day?",
-			},
-			{
-				text: "Wednesday?",
-			}
-		],
-		messageCount: 3
-		
-=======
 		image: require('../WorkingNav/assets/cat.jpg')
->>>>>>> Stashed changes
 	},
 	{
 		id: 4,
