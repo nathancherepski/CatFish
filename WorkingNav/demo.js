@@ -234,5 +234,75 @@ module.exports = [
 			}
 		],
 		messageCount: 3
-	}
+	},
+
+{
+	id: 11,
+	name: 'Alejandro Vargas',
+	match: '98',
+	description:
+		'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
+	status: 'Offline',
+	message:
+		'You want order in Gotham. Batman must take off his mask and turn himself in.',
+		image: require('./assets/fish5.jpg'),
+		messages: [
+		{
+			text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+		},
+		{
+			text: "What day?",
+		},
+		{
+			text: "Wednesday?",
+		}
+	],
+	messageCount: 3
+},
+{
+	id: 12,
+	name: 'Nathan Cherepski',
+	match: '98',
+	description:
+		'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
+	status: 'Offline',
+	message:
+		'You want order in Gotham. Batman must take off his mask and turn himself in.',
+		image: require('./assets/cat5.jpg'),
+		messages: [
+		{
+			text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+		},
+		{
+			text: "What day?",
+		},
+		{
+			text: "Wednesday?",
+		}
+	],
+	messageCount: 3
+},
+{
+	id: 13,
+	name: 'Omarr Roberts',
+	match: '98',
+	description:
+		'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
+	status: 'Offline',
+	message:
+		'You want order in Gotham. Batman must take off his mask and turn himself in.',
+		image: require('./assets/dog7.jpg'),
+		messages: [
+		{
+			text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+		},
+		{
+			text: "What day?",
+		},
+		{
+			text: "Wednesday?",
+		}
+	],
+	messageCount: 3
+}
 ];
