@@ -12,7 +12,8 @@ const CardItem = ({
   onPressLeft,
   onPressRight,
   status,
-  variant
+  variant,
+  messageCount
 }) => {
   // Custom styling
   const fullWidth = Dimensions.get('window').width;

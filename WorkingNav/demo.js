@@ -8,7 +8,19 @@ module.exports = [
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
 		message:
 			'I will go back to Gotham and I will fight men Iike this but I will not become an executioner.',
-		image: require('./assets/dogandcat.jpg')
+		image: require('./assets/catfishlogo.png'),
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	},
 	{
 		id: 2,
@@ -18,6 +30,18 @@ module.exports = [
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
 		status: 'Offline',
 		message: "Someone like you. Someone who'll rattle the cages.",
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 		
 	},
 	{
@@ -29,6 +53,19 @@ module.exports = [
 		status: 'Offline',
 		message:
 			'Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.',
+			
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 		
 	},
 	{
@@ -39,6 +76,18 @@ module.exports = [
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
 		status: 'Online',
 		message: "Bats frighten me. It's time my enemies shared my dread.",
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	
 	},
 	{
@@ -49,7 +98,18 @@ module.exports = [
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
 		status: 'Offline',
 		message: "It's not who I am underneath but what I do that defines me.",
-
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	},
 	{
 		id: 6,
@@ -60,7 +120,19 @@ module.exports = [
 		status: 'Online',
 		message:
 			'You have nothing, nothing to threaten me with. Nothing to do with all your strength.',
-
+	
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	},
 	{
 		id: 7,
@@ -72,6 +144,18 @@ module.exports = [
 		message:
 			"Never start with the head. The victim gets all fuzzy. He can't feel the next... See?",
 	
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	},
 	{
 		id: 8,
@@ -89,6 +173,18 @@ module.exports = [
 		message:
 			"And as for the television's so-called plan, Batman has no jurisdiction.",
 	
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	},
 	{
 		id: 9,
@@ -99,7 +195,18 @@ module.exports = [
 		status: 'Online',
 		message:
 			'This is what happens when an unstoppable force meets an immovable object.',
-		
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	},
 	{
 		id: 10,
@@ -110,6 +217,17 @@ module.exports = [
 		status: 'Offline',
 		message:
 			'You want order in Gotham. Batman must take off his mask and turn himself in.',
-	
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	}
 ];
