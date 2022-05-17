@@ -48,7 +48,7 @@ function Messages({ route, navigation }) {
                       status: status,
                       description: description,
                       messages: messages,
-                      messageCount: messageCount,
+                      messageCount: 1,
                       areMatched: "true"
                     })}></Button>
                     </View>
