@@ -13,7 +13,8 @@ const CardItem = ({
   onPressRight,
   status,
   variant,
-  messageCount
+  messageCount, 
+  areMatched
 }) => {
   // Custom styling
   const fullWidth = Dimensions.get('window').width;

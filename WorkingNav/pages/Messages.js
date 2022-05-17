@@ -5,10 +5,11 @@ import ImageLoader from "../components/ImageLoader";
 
 function Messages({ route, navigation }) {
     /* 2. Get the param */
-    const { image, name, status, description, messages, messageCount } = route.params;
+    const { image, name, status, description, messages, messageCount, areMatched } = route.params;
 
-    console.log(messages[0].text);
     const list = []
+
+    const webpage = []
 
     for (var i = 0; i < messageCount; i++) {
         list.push(<View style={backgroundStyles.inputView}>
@@ -18,27 +19,47 @@ function Messages({ route, navigation }) {
             </View>)
     }
 
+    function checkAreMatched()
+    {
+        if(areMatched == "true")
+        {
+            webpage.push(
+                <View>
+                <Text>{list}</Text>
+                <View style={backgroundStyles.inputView}>
+                    <TextInput
+                    id = "message"
+                    style={backgroundStyles.TextInput}
+                    placeholder="Insert Message Here"
+                    placeholderTextColor="#003f5c"
+                    />
+                </View>
+                </View>
+            )
+        }
+        else
+        {
+            webpage.push(
+                    <View>
+                    <Button style={buttonStyles.container} title={"Match"} onPress={({areMatched}) => areMatched = "true"}/>
+                    </View>
+            )
+        }
+    }
+    
+    checkAreMatched();
 
     return (
-        
         <ScrollView contentContainerStyle={backgroundStyles.container}>
-          <View style={titleStyles.title}>
-          <Image style={backgroundStyles.image1} source={image} />
-          <Text style={subtitles.title}>{name} - {status}</Text>
-          <Text style={small.title}>{description}</Text>
-          </ View>
-          <Text>{list}</Text>
-          <View style={backgroundStyles.inputView}>
-            <TextInput
-            id = "message"
-            style={backgroundStyles.TextInput}
-            placeholder="Insert Message Here"
-            placeholderTextColor="#003f5c"
-            />
-        </View>
-          
-          
+            <View style={titleStyles.title}>
+            <Image style={backgroundStyles.image1} source={image} />
+            <Text style={subtitles.title}>{name} - {status}</Text>
+            <Text style={small.title}>{description}</Text>
+            <View>{webpage}</View>
+            </ View>
+        
         </ScrollView>
+       
       );
   }
 
@@ -47,14 +68,15 @@ function Messages({ route, navigation }) {
 const buttonStyles = StyleSheet.create({
     container: {
       flex: 1,
-      alignItems: 'center'
+      alignItems: 'center',
+      height: 10,
     },
     image: {
-      marginTop: 100
+      marginTop: 5
     },
     text: {
         marginHorizontal: 0,
-        marginVertical: 40
+        marginVertical: 5
     }
     }
   );
@@ -88,6 +110,15 @@ const small = StyleSheet.create({
       backgroundColor: '#A083B6',
       borderWidth: 3,
       borderColor: "thistle",
+  }
+})
+
+const button = StyleSheet.create({
+    
+    but: { 
+        position: 'absolute',
+        bottom:0,
+        left:0,
   }
 })
 
