@@ -27,11 +27,10 @@ let passwords = [
 
 function checkCredentials(username, password)
 {
-  check = false;
+  var check = false;
 
   for(var count in users)
   {
-      console.log(users[count]);
     if(users[count] == username && passwords[count] == password)
     {
       check = true;
@@ -55,8 +54,9 @@ class LoginScreen extends React.Component {
       
     
       trylogin() {
-        if(checkCredentials(this.state.username, this.state.password)){
-          console.log('your username is', this.state.username);
+        var lower = this.state.username.toLowerCase();
+        if(checkCredentials(lower, this.state.password)){
+          console.log('your username is', lower);
           console.log('your password is', this.state.password);
           return true;
         }
