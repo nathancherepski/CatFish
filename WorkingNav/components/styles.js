@@ -2,6 +2,7 @@ import { StyleSheet, Dimensions } from "react-native";
 
 const PRIMARY_COLOR = "#7444C0";
 const SECONDARY_COLOR = "#5636B8";
+const PURPLE = '#A083B6'
 const WHITE = "#FFFFFF";
 const GRAY = "#757E90";
 const DARK_GRAY = "#363636";
@@ -31,10 +32,12 @@ export default StyleSheet.create({
 		shadowRadius: 10,
 		shadowColor: BLACK,
 		shadowOffset: { height: 0, width: 0 }
+		
+
 	},
 	matchesCardItem: {
 		marginTop: -35,
-		backgroundColor: PRIMARY_COLOR,
+		backgroundColor: PURPLE,
 		paddingVertical: 7,
 		paddingHorizontal: 20,
 		borderRadius: 20
@@ -45,7 +48,8 @@ export default StyleSheet.create({
 	},
 	descriptionCardItem: {
 		color: GRAY,
-		textAlign: "center"
+		textAlign: "center",
+		fontSize: 20
 	},
 	status: {
 		paddingBottom: 10,
@@ -172,8 +176,9 @@ export default StyleSheet.create({
 	},
 	message: {
 		color: GRAY,
-		fontSize: 12,
-		paddingTop: 5
+		fontSize: 18,
+		paddingTop: 5,
+		paddingBottom:20
 	},
 
 	// COMPONENT - PROFILE ITEM

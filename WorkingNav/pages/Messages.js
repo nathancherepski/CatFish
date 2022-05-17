@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Button, ScrollView, View, Text, TextInput, Image } from 'react-native';
 import CoolButton from '../components/CoolButton';
 import ImageLoader from "../components/ImageLoader";
+import styles from '../components/styles';
 
 function Messages({ route, navigation }) {
     /* 2. Get the param */
@@ -50,15 +51,14 @@ function Messages({ route, navigation }) {
     checkAreMatched();
 
     return (
-        <ScrollView contentContainerStyle={backgroundStyles.container}>
-            <View style={titleStyles.title}>
-            <Image style={backgroundStyles.image1} source={image} />
-            <Text style={subtitles.title}>{name} - {status}</Text>
-            <Text style={small.title}>{description}</Text>
+        <ScrollView contentContainerStyle={styles.containerCardItem}>
+            <View>
+            <Image  source={image} />
+          </View>
+            <Text style={styles.descriptionCardItem}>{name} - {status}</Text>
+            <Text style={styles.message}>{description}</Text>
             <View>{webpage}</View>
-            </ View>
-        
-        </ScrollView>
+           </ScrollView>
        
       );
   }
@@ -68,7 +68,7 @@ function Messages({ route, navigation }) {
 const buttonStyles = StyleSheet.create({
     container: {
       flex: 1,
-      alignItems: 'center',
+      alignSelf: 'center',
       height: 10,
     },
     image: {
@@ -133,13 +133,15 @@ const backgroundStyles = StyleSheet.create(
           width: 100,
           height: 125,
           marginTop: 0,
-          marginLeft: 0
+          marginLeft: 0,
+          
         },
 
         inputView: {
+        
             backgroundColor: "#4BCBDF",
             borderRadius: 30,
-            width: "70%",
+            width: "50%",
             height: 45,
             marginBottom: 0,
             justifyContent:"space-evenly",
