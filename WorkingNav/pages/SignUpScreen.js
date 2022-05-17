@@ -24,23 +24,8 @@ let passwords = [
     "told",
     "me",
 ]
-
-function checkCredentials(username, password)
-{
-  var check = false;
-
-  for(var count in users)
-  {
-    if(users[count] == username && passwords[count] == password)
-    {
-      check = true;
-    }
-  }
-
-  return check;
-}
  
-class LoginScreen extends React.Component {
+class SignUpScreen extends React.Component {
 
     constructor (props) {
         super(props);
@@ -73,6 +58,7 @@ class LoginScreen extends React.Component {
         <Image style={styles.image1} source={require("../assets/catfishlogo.png")} />
     
         <StatusBar style="auto" />
+        <View style={extra.inputView}><Text> Sign Up Below </Text></View>
         <View style={styles.inputView}>
             <TextInput
             id = "username"
@@ -98,21 +84,11 @@ class LoginScreen extends React.Component {
             />
         </View>
     
-        <TouchableOpacity onPress={() => this.props.navigation.navigate('SignUpScreen')}>
-            <Text style={styles.forgot_button}>Sign Up?</Text>
-        </TouchableOpacity>
-    
         <TouchableOpacity onPress={() => {
-          if(this.trylogin() == true) {
             this.props.navigation.navigate('Matches');
-          }
-          else
-          {
-            // send alert
-            console.log("invalid password");
-          }
+          
         }} style={styles.loginBtn}>
-            <Text style={styles.loginText}>LOGIN</Text>
+            <Text style={styles.loginText}>Sign Up Account</Text>
         </TouchableOpacity>
         </View>
     );
@@ -170,4 +146,60 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginScreen;
+
+const extra = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: "#9FA8DA",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    image1: {
+      flex: 4,
+      width: 250,
+      height: 275,
+      marginTop: 150,
+      marginLeft: 0,
+      resizeMode:"contain"
+  },
+    inputView: {
+      backgroundColor: "#A083B6",
+      borderRadius: 30,
+      width: "70%",
+      height: 45,
+      marginBottom: 20,
+   
+      alignItems: "center",
+    },
+   
+    TextInput: {
+      width: 225,
+      height: "70%",
+      flex: 1,
+      padding: 10,
+      marginLeft: 0,
+      alignItems: "center",
+    },
+   
+    forgot_button: {
+      height: 30,
+      marginBottom: 30,
+    },
+   
+    loginBtn: {
+      flex: "-30",
+      width: "80%",
+      borderRadius: 25,
+      height: 50,
+      alignItems: "center",
+      justifyContent: "center",
+      marginTop: 250,
+      backgroundColor: "#A083B6",
+    },
+  });
+  
+  
+
+
+
+export default SignUpScreen;

@@ -5,7 +5,7 @@ import HomeScreen from './pages/HomeScreen';
 import LoginScreen from './pages/LoginScreen';
 import MatchesScreen from './pages/MatchesScreen';
 import Messages from './pages/Messages';
-
+import SignUpScreen from './pages/SignUpScreen';
 
 
 
@@ -21,6 +21,7 @@ function App() {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Matches" component={MatchesScreen} />
         <Stack.Screen name="Messages" component={Messages} />
+        <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
