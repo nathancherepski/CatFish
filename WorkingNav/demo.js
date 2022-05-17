@@ -1,3 +1,5 @@
+
+   
 module.exports = [
 	{
 		id: 1,
@@ -30,7 +32,20 @@ module.exports = [
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
 		status: 'Offline',
 		message: "Someone like you. Someone who'll rattle the cages.",
-		image: require('../WorkingNav/assets/Dog.webp')
+		image: require('./assets/cat1.jpg'),
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
+		
 	},
 	{
 		id: 3,
@@ -41,7 +56,20 @@ module.exports = [
 		status: 'Offline',
 		message:
 			'Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.',
-		image: require('../WorkingNav/assets/cat.jpg')
+			image: require('./assets/dog2.jpg'),
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
+		
 	},
 	{
 		id: 4,
@@ -51,7 +79,20 @@ module.exports = [
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
 		status: 'Online',
 		message: "Bats frighten me. It's time my enemies shared my dread.",
-		image: require('../WorkingNav/assets/cat10.jpg')
+		image: require('./assets/fish1.jpg'),
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
+	
 	},
 	{
 		id: 5,
@@ -61,7 +102,19 @@ module.exports = [
 			'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
 		status: 'Offline',
 		message: "It's not who I am underneath but what I do that defines me.",
-		image: require('../WorkingNav/assets/clifford.jpg')
+		image: require('./assets/fish7.jpg'),
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	},
 	{
 		id: 6,
@@ -72,7 +125,19 @@ module.exports = [
 		status: 'Online',
 		message:
 			'You have nothing, nothing to threaten me with. Nothing to do with all your strength.',
-			image: require('../WorkingNav/assets/dog5.jpg')
+			image: require('./assets/dog3.jpg'),
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	},
 	{
 		id: 7,
@@ -83,7 +148,19 @@ module.exports = [
 		status: 'Online',
 		message:
 			"Never start with the head. The victim gets all fuzzy. He can't feel the next... See?",
-			image: require('../WorkingNav/assets/dog7.jpg')
+			image: require('./assets/dog6.jpg'),
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	},
 	{
 		id: 8,
@@ -100,7 +177,19 @@ module.exports = [
 		status: 'Online',
 		message:
 			"And as for the television's so-called plan, Batman has no jurisdiction.",
-			image: require('../WorkingNav/assets/fish.jpg')
+			image: require('./assets/cat4.jpg'),
+		messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	},
 	{
 		id: 9,
@@ -111,7 +200,19 @@ module.exports = [
 		status: 'Online',
 		message:
 			'This is what happens when an unstoppable force meets an immovable object.',
-			image: require('../WorkingNav/assets/fishman.jpg')
+			image: require('./assets/fish10.jpg'),
+			messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
 	},
 	{
 		id: 10,
@@ -122,6 +223,88 @@ module.exports = [
 		status: 'Offline',
 		message:
 			'You want order in Gotham. Batman must take off his mask and turn himself in.',
-			image: require('../WorkingNav/assets/tomcat.jpg')
-	}
+			image: require('./assets/dog5.jpg'),
+			messages: [
+			{
+				text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+			},
+			{
+				text: "What day?",
+			},
+			{
+				text: "Wednesday?",
+			}
+		],
+		messageCount: 3
+	},
+
+{
+	id: 11,
+	name: 'Alejandro Vargas',
+	match: '98',
+	description:
+		'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
+	status: 'Offline',
+	message:
+		'You want order in Gotham. Batman must take off his mask and turn himself in.',
+		image: require('./assets/fish5.jpg'),
+		messages: [
+		{
+			text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+		},
+		{
+			text: "What day?",
+		},
+		{
+			text: "Wednesday?",
+		}
+	],
+	messageCount: 3
+},
+{
+	id: 12,
+	name: 'Nathan Cherepski',
+	match: '98',
+	description:
+		'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
+	status: 'Offline',
+	message:
+		'You want order in Gotham. Batman must take off his mask and turn himself in.',
+		image: require('./assets/cat5.jpg'),
+		messages: [
+		{
+			text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+		},
+		{
+			text: "What day?",
+		},
+		{
+			text: "Wednesday?",
+		}
+	],
+	messageCount: 3
+},
+{
+	id: 13,
+	name: 'Omarr Roberts',
+	match: '98',
+	description:
+		'Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.',
+	status: 'Offline',
+	message:
+		'You want order in Gotham. Batman must take off his mask and turn himself in.',
+		image: require('./assets/dog7.jpg'),
+		messages: [
+		{
+			text: "Hey I'm looking for a person to go out with this weekend, are you interested?",
+		},
+		{
+			text: "What day?",
+		},
+		{
+			text: "Wednesday?",
+		}
+	],
+	messageCount: 3
+}
 ];

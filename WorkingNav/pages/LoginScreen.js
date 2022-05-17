@@ -130,8 +130,9 @@ const styles = StyleSheet.create({
     flex: 4,
     width: 250,
     height: 275,
-    marginTop: 0,
-    marginLeft: 0
+    marginTop: 150,
+    marginLeft: 0,
+    resizeMode:"contain"
 },
   inputView: {
     backgroundColor: "#A083B6",
@@ -157,12 +158,13 @@ const styles = StyleSheet.create({
   },
  
   loginBtn: {
+    flex: "-30",
     width: "80%",
     borderRadius: 25,
     height: 50,
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 40,
+    marginTop: 250,
     backgroundColor: "#A083B6",
   },
 });
